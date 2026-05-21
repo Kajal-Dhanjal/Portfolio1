@@ -4,64 +4,78 @@ import {
   AiFillGithub,
   AiOutlineTwitter,
   AiFillInstagram,
+  AiFillYoutube,
 } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn, FaTiktok } from "react-icons/fa";
 
 function Footer() {
-  let date = new Date();
-  let year = date.getFullYear();
   return (
     <Container fluid className="footer">
       <Row>
-        <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Soumyajit Behera</h3>
-        </Col>
-        <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} SB</h3>
-        </Col>
-        <Col md="4" className="footer-body">
-          <ul className="footer-icons">
+        <Col md="12" className="footer-body" style={{ textAlign: "center" }}>
+          <ul className="footer-icons" style={{ justifyContent: "center" }}>
             <li className="social-icons">
-              <a
-                href="https://github.com/soumyajit4419"
+              
+                href="https://github.com"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiFillGithub />
               </a>
             </li>
             <li className="social-icons">
-              <a
-                href="https://twitter.com/Soumyajit4419"
+              
+                href="https://twitter.com"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiOutlineTwitter />
               </a>
             </li>
             <li className="social-icons">
-              <a
-                href="https://www.linkedin.com/in/soumyajit4419/"
+              
+                href="https://linkedin.com"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaLinkedinIn />
               </a>
             </li>
             <li className="social-icons">
-              <a
-                href="https://www.instagram.com/soumyajit4419"
+              
+                href="https://instagram.com"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiFillInstagram />
               </a>
             </li>
+            <li className="social-icons">
+              
+                href="https://tiktok.com"
+                style={{ color: "white" }}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaTiktok />
+              </a>
+            </li>
+            <li className="social-icons">
+              
+                href="https://youtube.com"
+                style={{ color: "white" }}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <AiFillYoutube />
+              </a>
+            </li>
           </ul>
+          <h3 style={{ color: "white", paddingTop: "10px" }}>Based In [Your Location]</h3>
         </Col>
       </Row>
     </Container>
