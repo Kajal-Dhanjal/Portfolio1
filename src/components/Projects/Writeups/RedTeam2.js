@@ -1,5 +1,5 @@
 import React from "react";
-import WriteupTemplate from "../WriteupTemplate";
+import WriteupTemplate from "./WriteupTemplate";
 
 /*
   ============================================================
