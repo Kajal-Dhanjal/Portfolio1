@@ -5,36 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Project Writeup</title>
   <link rel="stylesheet" href="writeup-style.css" />
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body>
 
   <canvas id="particle-canvas"></canvas>
 
+  <!-- ── Navbar ── -->
+  <nav class="navbar">
+    <a href="/" class="navbar-brand">Bree.</a>
+    <ul class="navbar-links">
+      <li><a href="/"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="/project"><i class="fas fa-desktop"></i> Projects</a></li>
+      <li><a href="/resume"><i class="fas fa-file-alt"></i> Resume</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── Page Content ── -->
   <div class="page-wrapper">
 
-    <!-- Back Button -->
     <div class="btn-row">
-      <a href="javascript:history.back()" class="back-btn">← Back to Portfolio</a>
+      <a href="javascript:history.back()" class="back-btn">← Back to Projects</a>
     </div>
 
     <!-- ======================================================
-         EVERYTHING BELOW THIS LINE IS WHAT YOU REPLACE
-         Just paste your converted HTML content here
+         EVERYTHING BETWEEN HERE AND THE STOP LINE IS WHAT YOU REPLACE
+         Just paste your converted HTML content inside the content-box div
          ====================================================== -->
 
     <div class="content-box">
 
       <h1>Project Title Goes Here</h1>
-
       <p>Write a short introduction to your project here. What is it about? Why did you do it?</p>
 
       <hr>
 
       <h2>Overview</h2>
-      <p>Describe what this project is about in simple terms. Imagine explaining it to someone who has never heard of cybersecurity before.</p>
+      <p>Describe what this project is about in simple terms.</p>
 
       <h2>What Was Done</h2>
-      <p>Walk through what you actually did, step by step. Keep it clear and simple.</p>
+      <p>Walk through what you actually did, step by step.</p>
       <ul>
         <li>Step one description</li>
         <li>Step two description</li>
@@ -42,7 +53,6 @@
       </ul>
 
       <h2>Tools Used</h2>
-      <p>List the tools and explain briefly what each one does.</p>
       <ul>
         <li><strong>Tool Name</strong> — what it does in one sentence</li>
         <li><strong>Tool Name</strong> — what it does in one sentence</li>
@@ -52,20 +62,30 @@
       <p>What did you discover? What were the most important results?</p>
 
       <h2>What This Means</h2>
-      <p>Explain the real-world impact. Why does this matter? What should someone do about it?</p>
+      <p>Explain the real-world impact. Why does this matter?</p>
 
     </div>
+
     <!-- ======================================================
          STOP HERE — do not edit below this line
          ====================================================== -->
 
-    <div class="page-footer">
-      <p>Part of <a href="/">Bree's Security Portfolio</a> &nbsp;·&nbsp; All work conducted in controlled lab environments</p>
-    </div>
-
   </div>
 
-  <!-- Particle Script -->
+  <!-- ── Footer ── -->
+  <footer class="site-footer">
+    <ul class="footer-icons">
+      <li><a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a></li>
+      <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+      <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+      <li><a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
+    </ul>
+    <p class="footer-text">Based In [Your Location]</p>
+  </footer>
+
+  <!-- ── Particle Script ── -->
   <script>
     const canvas = document.getElementById('particle-canvas');
     const ctx = canvas.getContext('2d');
