@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
+import { useNavigate } from "react-router-dom";
 
 function ProjectCards(props) {
   const [hovered, setHovered] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <Card className="project-card-view">
@@ -27,19 +29,17 @@ function ProjectCards(props) {
           {props.description}
         </Card.Text>
         <div style={{ textAlign: "center" }}>
-          <a
-            href={props.writeupLink}
-            target="_blank"
-            rel="noreferrer"
+          <button
+            onClick={() => navigate(props.writeupLink)}
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
             style={{
               display: "inline-block",
               padding: "8px 20px",
               borderRadius: "5px",
-              border: "2px solid #a855d4",
-              backgroundColor: hovered ? "white" : "#a855d4",
-              color: hovered ? "#a855d4" : "white",
+              border: "2px solid #c770f0",
+              backgroundColor: hovered ? "white" : "#c770f0",
+              color: hovered ? "#c770f0" : "white",
               fontWeight: "bold",
               textDecoration: "none",
               transition: "all 0.3s ease",
@@ -47,7 +47,7 @@ function ProjectCards(props) {
             }}
           >
             View Project
-          </a>
+          </button>
         </div>
       </Card.Body>
     </Card>
