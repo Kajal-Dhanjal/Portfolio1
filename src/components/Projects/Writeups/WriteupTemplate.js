@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
 import Particle from "../../Particle";
 
-function WriteupTemplate({ title, children }) {
-  const navigate = useNavigate();
+function WriteupTemplate({ children }) {
+  const [hovered, setHovered] = useState(false);
 
   return (
     <div>
@@ -13,20 +12,21 @@ function WriteupTemplate({ title, children }) {
         <Container style={{ paddingTop: "20px", paddingBottom: "80px", maxWidth: "860px" }}>
 
           <button
-            onClick={() => navigate("/project")}
+            onClick={() => window.location.href = "https://the-playground-portfolio1.vercel.app/project"}
+            onMouseEnter={() => setHovered(true)}
+            onMouseLeave={() => setHovered(false)}
             style={{
-              backgroundColor: "#623686",
-              border: "1px solid #623686",
-              color: "white",
-              padding: "6px 20px",
+              display: "inline-block",
+              padding: "8px 20px",
               borderRadius: "5px",
-              cursor: "pointer",
-              fontSize: "1rem",
-              marginBottom: "40px",
+              border: "2px solid #c770f0",
+              backgroundColor: hovered ? "white" : "#c770f0",
+              color: hovered ? "#c770f0" : "white",
+              fontWeight: "bold",
               transition: "all 0.3s ease",
+              cursor: "pointer",
+              marginBottom: "40px",
             }}
-            onMouseEnter={e => e.currentTarget.style.backgroundColor = "#6d20c5"}
-            onMouseLeave={e => e.currentTarget.style.backgroundColor = "#623686"}
           >
             ← Back to Projects
           </button>
