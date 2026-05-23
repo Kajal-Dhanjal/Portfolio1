@@ -3,134 +3,51 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Project Writeup</title>
-  <link rel="stylesheet" href="writeup-style.css" />
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <title>Breaking In — Legally | Project Writeup</title>
+  <link rel="stylesheet" href="writeup.css" />
 </head>
 <body>
+  <div class="writeup-section">
+    <div class="writeup-container">
 
-  <canvas id="particle-canvas"></canvas>
+      <a href="/" class="back-btn">← Back to Portfolio</a>
 
-  <!-- ── Navbar ── -->
-  <nav class="navbar">
-    <a href="/" class="navbar-brand">Bree.</a>
-    <ul class="navbar-links">
-      <li><a href="/"><i class="fas fa-home"></i> Home</a></li>
-      <li><a href="/project"><i class="fas fa-desktop"></i> Projects</a></li>
-      <li><a href="/resume"><i class="fas fa-file-alt"></i> Resume</a></li>
-    </ul>
-  </nav>
+      <div class="writeup-content">
 
-  <!-- ── Page Content ── -->
-  <div class="page-wrapper">
+        <h1>Breaking In — <span class="purple">Legally</span></h1>
 
-    <div class="btn-row">
-      <a href="javascript:history.back()" class="back-btn">← Back to Projects</a>
+        <h2>Overview</h2>
+        <p>
+          Replace this paragraph with your project overview. Explain what the project is about in simple terms that anyone can understand.
+        </p>
+
+        <h2>What Was the Goal?</h2>
+        <p>
+          Replace this with the goal of your project. What were you trying to achieve or demonstrate?
+        </p>
+
+        <h2>How It Was Done</h2>
+        <p>Replace this with your methodology. Walk through the steps you took.</p>
+        <ol>
+          <li>Step one — describe what you did here</li>
+          <li>Step two — describe what you did here</li>
+          <li>Step three — describe what you did here</li>
+        </ol>
+
+        <h2>Tools Used</h2>
+        <ul>
+          <li><strong>Tool Name</strong> — what it does</li>
+          <li><strong>Tool Name</strong> — what it does</li>
+        </ul>
+
+        <h2>Key Findings</h2>
+        <p>Replace this with what you discovered or demonstrated during the project.</p>
+
+        <h2>Conclusion</h2>
+        <p>Replace this with your final thoughts and what someone should take away from this project.</p>
+
+      </div>
     </div>
-
-    <!-- ======================================================
-         EVERYTHING BETWEEN HERE AND THE STOP LINE IS WHAT YOU REPLACE
-         Just paste your converted HTML content inside the content-box div
-         ====================================================== -->
-
-    <div class="content-box">
-
-      <h1>Project Title Goes Here</h1>
-      <p>Write a short introduction to your project here. What is it about? Why did you do it?</p>
-
-      <hr>
-
-      <h2>Overview</h2>
-      <p>Describe what this project is about in simple terms.</p>
-
-      <h2>What Was Done</h2>
-      <p>Walk through what you actually did, step by step.</p>
-      <ul>
-        <li>Step one description</li>
-        <li>Step two description</li>
-        <li>Step three description</li>
-      </ul>
-
-      <h2>Tools Used</h2>
-      <ul>
-        <li><strong>Tool Name</strong> — what it does in one sentence</li>
-        <li><strong>Tool Name</strong> — what it does in one sentence</li>
-      </ul>
-
-      <h2>Key Findings</h2>
-      <p>What did you discover? What were the most important results?</p>
-
-      <h2>What This Means</h2>
-      <p>Explain the real-world impact. Why does this matter?</p>
-
-    </div>
-
-    <!-- ======================================================
-         STOP HERE — do not edit below this line
-         ====================================================== -->
-
   </div>
-
-  <!-- ── Footer ── -->
-  <footer class="site-footer">
-    <ul class="footer-icons">
-      <li><a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a></li>
-      <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
-      <li><a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-      <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
-      <li><a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a></li>
-      <li><a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
-    </ul>
-    <p class="footer-text">Based In [Your Location]</p>
-  </footer>
-
-  <!-- ── Particle Script ── -->
-  <script>
-    const canvas = document.getElementById('particle-canvas');
-    const ctx = canvas.getContext('2d');
-    let particles = [];
-
-    function resize() {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    }
-
-    function createParticles() {
-      particles = [];
-      const count = Math.floor((canvas.width * canvas.height) / 15000);
-      for (let i = 0; i < count; i++) {
-        particles.push({
-          x: Math.random() * canvas.width,
-          y: Math.random() * canvas.height,
-          r: Math.random() * 1.5 + 0.5,
-          dx: (Math.random() - 0.5) * 0.3,
-          dy: (Math.random() - 0.5) * 0.3,
-          opacity: Math.random() * 0.5 + 0.2,
-        });
-      }
-    }
-
-    function draw() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      particles.forEach(p => {
-        ctx.beginPath();
-        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(199, 112, 240, ${p.opacity})`;
-        ctx.fill();
-        p.x += p.dx;
-        p.y += p.dy;
-        if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
-        if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
-      });
-      requestAnimationFrame(draw);
-    }
-
-    resize();
-    createParticles();
-    draw();
-    window.addEventListener('resize', () => { resize(); createParticles(); });
-  </script>
-
 </body>
 </html>
