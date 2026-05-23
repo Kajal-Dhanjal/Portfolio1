@@ -15,14 +15,31 @@ function Home() {
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 Hi There!{" "}
+
+// ====================================================================================================================================================
+
+// EDIT THIS PART:
+// SELECT THE SKIN TONE THAT WORKS BEST FOR YOU (ONLY CHOOSE ONE OR THE CODE WON'T WORK): 👋 👋🏻 👋🏼 👋🏽 👋🏾 👋🏿
+
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
+
+// ====================================================================================================================================================
               </h1>
 
               <h1 className="heading-name">
                 I'M
+
+// ====================================================================================================================================================
+
+// EDIT THIS PART:
+// WHERE IT SAYS [YOUR NAME] CHANGE THAT TO YOUR PREFERRED NICKNAME OR REAL NAME
+                  
                 <strong className="main-name"> [YOUR NAME] </strong>
+// ====================================================================================================================================================
+
+                  
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
