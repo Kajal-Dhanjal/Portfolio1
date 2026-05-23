@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project Writeup</title>
+  <link rel="stylesheet" href="writeup-style.css" />
+</head>
+<body>
+
+  <canvas id="particle-canvas"></canvas>
+
+  <div class="page-wrapper">
+
+    <!-- Back Button -->
+    <div class="btn-row">
+      <a href="javascript:history.back()" class="back-btn">← Back to Portfolio</a>
+    </div>
+
+    <!-- ======================================================
+         EVERYTHING BELOW THIS LINE IS WHAT YOU REPLACE
+         Just paste your converted HTML content here
+         ====================================================== -->
+
+    <div class="content-box">
+
+      <h1>Project Title Goes Here</h1>
+
+      <p>Write a short introduction to your project here. What is it about? Why did you do it?</p>
+
+      <hr>
+
+      <h2>Overview</h2>
+      <p>Describe what this project is about in simple terms. Imagine explaining it to someone who has never heard of cybersecurity before.</p>
+
+      <h2>What Was Done</h2>
+      <p>Walk through what you actually did, step by step. Keep it clear and simple.</p>
+      <ul>
+        <li>Step one description</li>
+        <li>Step two description</li>
+        <li>Step three description</li>
+      </ul>
+
+      <h2>Tools Used</h2>
+      <p>List the tools and explain briefly what each one does.</p>
+      <ul>
+        <li><strong>Tool Name</strong> — what it does in one sentence</li>
+        <li><strong>Tool Name</strong> — what it does in one sentence</li>
+      </ul>
+
+      <h2>Key Findings</h2>
+      <p>What did you discover? What were the most important results?</p>
+
+      <h2>What This Means</h2>
+      <p>Explain the real-world impact. Why does this matter? What should someone do about it?</p>
+
+    </div>
+    <!-- ======================================================
+         STOP HERE — do not edit below this line
+         ====================================================== -->
+
+    <div class="page-footer">
+      <p>Part of <a href="/">Bree's Security Portfolio</a> &nbsp;·&nbsp; All work conducted in controlled lab environments</p>
+    </div>
+
+  </div>
+
+  <!-- Particle Script -->
+  <script>
+    const canvas = document.getElementById('particle-canvas');
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+
+    function resize() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+
+    function createParticles() {
+      particles = [];
+      const count = Math.floor((canvas.width * canvas.height) / 15000);
+      for (let i = 0; i < count; i++) {
+        particles.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          r: Math.random() * 1.5 + 0.5,
+          dx: (Math.random() - 0.5) * 0.3,
+          dy: (Math.random() - 0.5) * 0.3,
+          opacity: Math.random() * 0.5 + 0.2,
+        });
+      }
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(p => {
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(199, 112, 240, ${p.opacity})`;
+        ctx.fill();
+        p.x += p.dx;
+        p.y += p.dy;
+        if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
+        if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
+      });
+      requestAnimationFrame(draw);
+    }
+
+    resize();
+    createParticles();
+    draw();
+    window.addEventListener('resize', () => { resize(); createParticles(); });
+  </script>
+
+</body>
+</html>
