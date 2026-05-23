@@ -10,7 +10,7 @@ function Type() {
 // ====================================================================================================================================================
 
 // EDIT THIS PART:
-// 
+// ADD OR REMOVE AS MANY ROLES AS YOU WANT LIKE SOC ANALYST, TECH SUPPORT, SECURITY ANALYST. JUST MAINTAIN THE EXACT SAME FORMAT STRUCTURE. 
           
           "Role Title 1",
           "Role Title 2",
