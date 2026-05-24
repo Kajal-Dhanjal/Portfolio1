@@ -66,7 +66,7 @@ function Footer() {
 
 
           {/* EDIT THIS PART:
-              Change the [Your Location] directly under this to the country or city your based in. */}
+              Change the [Your Location] directly under this to the country or city you're based in. */}
 
           <h3 style={{ color: "white", paddingTop: "10px" }}>Based In [Your Location]</h3>
         </Col>
