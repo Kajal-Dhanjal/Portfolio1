@@ -8,6 +8,7 @@ Before you begin, it is highly recommended that you customize this portfolio on 
 
 For the smoothest experience, it is recommended that you have 2 browser tabs open side-by-side while customizing the portfolio.
 
+🪟 Windows Users / 🐧 Linux Users
 
 1. Open one tab for reading these instructions.
    
@@ -26,7 +27,23 @@ For the smoothest experience, it is recommended that you have 2 browser tabs ope
             
       This will show instructions to the right side of your screen.
 
-This setup makes it much easier to follow the guide while editing your portfolio at the same time without constantly switching tabs or digging through code.
+🍎 macOS Users
+
+1. Open one tab for reading these instructions.
+
+      Hover over the green fullscreen button at the top-left corner of the window.
+
+      Then choose:
+
+         Tile Window to Left of Screen
+   
+2. Open your second tab or code editor.
+
+      Select:
+
+         Tile Window to Right of Screen
+   
+      macOS will automatically place both windows side-by-side.
 
 
 ---
