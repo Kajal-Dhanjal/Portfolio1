@@ -346,7 +346,7 @@ with your: Country, City or wherever you are based.
 
 ---
 
-# 🌟 Home Page Complete
+## 🌟 Home Page Complete
 
 That’s it, we’re officially done customizing the Home Page 🎉
 
@@ -356,7 +356,7 @@ By now, you should notice some massive changes and the portfolio should start fe
 ---
 
 
-## 📂 Projects Page Customization
+# 📂 Projects Page Customization
 
 ✨ Step 1: Customizing Your Projects Text
 
