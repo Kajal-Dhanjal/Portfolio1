@@ -286,7 +286,7 @@ Now locate and open this file:
 
       src/components/Home/Home2.js
 
-Inside the file, look at **line 4**.
+Inside the file, look at **line 7**.
 
 You will see some instructions and something that looks like:
 
