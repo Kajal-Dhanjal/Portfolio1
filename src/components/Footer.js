@@ -20,42 +20,42 @@ function Footer() {
               Below are the list of social media platforms vistors can find and contact you, you can delete what doesn't apply.
               For you to link your social media handles all you have to do is change the link to your specific URL including the https:// */}
 
-            // GITHUB 
+            {/* GITHUB */}
             <li className="social-icons">
               <a href="https://github.com/aScriptKiddie" style={{ color: "white" }} target="_blank" rel="noopener noreferrer">
                 <AiFillGithub />
               </a>
             </li>
 
-            // TWITTER 
+            {/* TWITTER */}
             <li className="social-icons">
               <a href="https://twitter.com" style={{ color: "white" }} target="_blank" rel="noopener noreferrer">
                 <AiOutlineTwitter />
               </a>
             </li>
 
-            // LINKEDIN
+            {/* LINKEDIN */}
             <li className="social-icons">
               <a href="https://www.linkedin.com/in/bree-kagwe" style={{ color: "white" }} target="_blank" rel="noopener noreferrer">
                 <FaLinkedinIn />
               </a>
             </li>
 
-            // INSTAGRAM
+            {/* INSTAGRAM */}
             <li className="social-icons">
               <a href="https://instagram.com" style={{ color: "white" }} target="_blank" rel="noopener noreferrer">
                 <AiFillInstagram />
               </a>
             </li>
 
-            // TIKTOK
+            {/* TIKTOK */}
             <li className="social-icons">
               <a href="https://tiktok.com" style={{ color: "white" }} target="_blank" rel="noopener noreferrer">
                 <FaTiktok />
               </a>
             </li>
 
-            // YOUTUBE
+            {/* YOUTUBE */}
             <li className="social-icons">
               <a href="https://www.youtube.com/@aScriptKiddie" style={{ color: "white" }} target="_blank" rel="noopener noreferrer">
                 <AiFillYoutube />
