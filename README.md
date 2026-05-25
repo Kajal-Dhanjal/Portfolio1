@@ -3,6 +3,309 @@ Before you begin, it is highly recommended that you customize this portfolio on 
 
 ---
 
+# 🚀 Portfolio Deployment & Setup Guide
+
+Before we can customize anything, we first need to get your portfolio deployed online.
+
+This portfolio is built using **React**, which means it needs a hosting platform to properly build and deploy the code.
+
+We’ll be using **Vercel** because it’s beginner-friendly, fast, and works perfectly with React applications.
+
+
+---
+
+
+✨ Step 1: Create A Vercel Account
+
+First, open:
+
+[Vercel](https://vercel.com)
+
+I’ve attached an image below showing what the homepage looks like.
+
+<img src="README-Images/Open-vercel.png" width="1000">
+
+---
+
+## ⚠️ Important
+
+Without doing this step, the instructions below will not work properly because the portfolio needs Vercel to deploy the React application.
+
+When creating your account:
+
+* Use the **same GitHub account** that contains your portfolio repository
+* This makes importing and deploying your portfolio significantly easier
+
+---
+
+# 🔗 Step 2 — Connect GitHub To Vercel
+
+Once logged into Vercel, locate the section called:
+
+```txt id="n8r2wy"
+Import Git Repository
+```
+
+I’ve attached an image below showing where this is located.
+
+---
+
+## ✨ Connect Your GitHub Account
+
+Inside the **Import Git Repository** section:
+
+1. Connect your GitHub account to Vercel
+2. You should now see an **Install** button appear
+3. Click the **Install** button like shown in the image below
+
+---
+
+# 📂 Import Your Portfolio Repository
+
+After installing GitHub access:
+
+* All of your repositories should now appear underneath the:
+
+```txt id="m4v7qp"
+Import Git Repository
+```
+
+section.
+
+Locate the specific portfolio repository and import it.
+
+---
+
+# 🌐 Choose Your Domain Name
+
+Before deploying, you can customize your domain name to whatever you want.
+
+For example:
+
+```txt id="z1r9hx"
+cyberkai.vercel.app
+```
+
+or
+
+```txt id="q6t3mw"
+alexportfolio.vercel.app
+```
+
+Then click the:
+
+```txt id="y2k8nv"
+Deploy
+```
+
+button.
+
+---
+
+# ⚠️ Don’t Panic If You Get Errors
+
+If you immediately see a:
+
+* 🔴 Red dot = deployment error
+* 🟢 Green dot = successful deployment
+
+then don’t worry.
+
+If you received a green dot, you can skip the next troubleshooting steps.
+
+If you received a red dot, continue below.
+
+---
+
+# 🛠️ Step 3 — Fixing Deployment Errors
+
+Click the:
+
+```txt id="f8w3pc"
+Go To Projects
+```
+
+button.
+
+---
+
+## 🔍 Locate Environment Variables
+
+On the left-hand sidebar, locate:
+
+```txt id="c7v1mq"
+Environment Variables
+```
+
+like shown in the image below.
+
+Then click:
+
+```txt id="d2q9ra"
+Add Environment Variable
+```
+
+---
+
+# ✍️ Add The First Environment Variable
+
+A new panel should appear.
+
+Fill in the fields exactly like this:
+
+### Key
+
+```txt id="u5m8zn"
+CI
+```
+
+### Value
+
+```txt id="k4r2jx"
+false
+```
+
+Then click:
+
+```txt id="t7n6qw"
+Save
+```
+
+---
+
+# ✍️ Add The Second Environment Variable
+
+Now repeat the exact same process again.
+
+Click:
+
+```txt id="x3p8mh"
+Add Environment Variable
+```
+
+Then enter:
+
+### Key
+
+```txt id="w6q2rv"
+CLI
+```
+
+### Value
+
+```txt id="n9t4zy"
+false
+```
+
+Then click:
+
+```txt id="g2m7vx"
+Save
+```
+
+---
+
+# 🔄 Redeploy Your Portfolio
+
+Once both environment variables have been added, click the:
+
+```txt id="b5r1kn"
+Redeploy
+```
+
+button.
+
+You can redeploy in two ways:
+
+### Option 1
+
+Use the redeploy button shown on the deployment page.
+
+### Option 2
+
+1. Select:
+
+```txt id="p8z6tm"
+Deployments
+```
+
+from the left-hand sidebar
+
+2. Open the failed deployment/error message
+3. Click:
+
+```txt id="j1q4wc"
+Redeploy
+```
+
+in the top corner
+
+---
+
+# 🌐 Opening Your Portfolio
+
+Once deployment succeeds, you should now be able to open your portfolio using any of the generated Vercel domains shown on the screen.
+
+---
+
+# ✨ Changing Your Domain Name Later
+
+If you want to change your domain name later:
+
+1. Select:
+
+```txt id="e3m7yr"
+Domains
+```
+
+from the left-hand sidebar
+
+2. Click:
+
+```txt id="a8v2qp"
+Edit
+```
+
+like shown in the image below
+
+3. Enter your preferred domain name
+4. Click:
+
+```txt id="r6t9nx"
+Save
+```
+
+If Vercel gives you a confirmation prompt, any option should work fine.
+
+---
+
+# 🎉 Perfect — Setup Complete
+
+That’s it 🎉
+
+Your portfolio should now be successfully deployed online and ready to customize.
+
+From this point forward, all of the customization instructions in this README should work correctly.
+
+---
+
+# 🛠️ Troubleshooting Tips
+
+If your code ever stops working or something breaks:
+
+Head over to the Vercel platform and check:
+
+```txt id="w9n5kv"
+Deployment Errors
+```
+
+Vercel usually gives very helpful error messages explaining what caused the problem.
+
+And of course — feel free to ask your AI assistant for some help along the way.
+
+
+---
+
 
 ## 🖥️ Setup Recommendation
 
