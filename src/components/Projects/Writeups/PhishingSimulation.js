@@ -1,22 +1,10 @@
 import React from "react";
 import WriteupTemplate from "./WriteupTemplate";
 
-/*
-  ============================================================
-  HOW TO EDIT THIS FILE
-  ============================================================
-  - Only edit the text between the tags below
-  - To add a screenshot, upload the image to:
-      src/Assets/Project-Writeups/
-    Then add this line where you want it to appear:
-      <img src={require("../../../Assets/Project-Writeups/your-image.png")} alt="description" style={imgStyle} />
-  - Do NOT change anything in WriteupTemplate.js
-  ============================================================
-*/
 
 function RedTeam1() {
 
-  // --- IMAGE STYLE --- (controls how screenshots look, edit if needed)
+
   const imgStyle = {
     width: "100%",
     borderRadius: "8px",
@@ -52,8 +40,7 @@ function RedTeam1() {
       <h3 style={{ fontSize: "1.2em", paddingTop: "16px", paddingBottom: "6px" }}>Step 1 — Replace with step title</h3>
       <p>Describe what you did in this step.</p>
 
-      {/* To add a screenshot here, upload the image to src/Assets/Project-Writeups/ and uncomment the line below */}
-      {/* <img src={require("../../../Assets/Project-Writeups/step1-screenshot.png")} alt="Step 1 screenshot" style={imgStyle} /> */}
+      {/* To add an image here, upload the image to src/Assets/Project-Writeups/ and make sure you redirect using the right link. */}
 
       <h3 style={{ fontSize: "1.2em", paddingTop: "16px", paddingBottom: "6px" }}>Step 2 — Replace with step title</h3>
       <p>Describe what you did in this step.</p>
