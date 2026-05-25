@@ -386,13 +386,7 @@ That means:
   
 💡 Helpful Tip
 
-You can write your project documentation in:
-
-Microsoft Word
-Google Docs
-Or as a PDF
-
-Then ask an AI assistant to convert your documentation into HTML code.
+You can write your project documentation in: Microsoft Word, Google Docs, Or as a PDF. Then ask an AI assistant to convert your documentation into HTML code.
 
 Once converted, copy and paste the generated HTML code into your write-up file between the `EDIT BETWEEN THIS LINES SECTIONS`.
 
