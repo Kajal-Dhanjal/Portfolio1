@@ -378,6 +378,14 @@ This could be roles such as:
 
 or anything else that matches your skills and goals.
 
+PS: If you ever want to go back to a previous folder or file while following this guide, simply click any of the highlighted names shown in blue at the top of GitHub.
+
+GitHub automatically creates a navigation path so you can quickly move between folders without needing to restart from the main page.
+
+This makes moving around the project much faster and easier while customizing your portfolio.
+
+<img src="README-Images/navigating-github.png" width="1000">
+
 We’re going to do the exact same thing we did before, but this time open this file:
 
       src/components/Home/Type.js
