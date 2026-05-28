@@ -77,7 +77,7 @@ When creating your account:
 
 Once logged into Vercel, locate the section called:
 
-      Import Git Repository
+      Import Git Repository or Add New Project
 
 I’ve attached an image below showing where this is located.
 
