@@ -15,7 +15,41 @@ We’ll be using **Vercel** because it’s beginner-friendly, fast, and works pe
 ---
 
 
-✨ Step 1: Create A Vercel Account
+✨ Step 1: Forking The Portfolio
+
+Locate the `Fork` button on the GitHub repository page just like shown in the images below.
+
+Then:
+
+* Click the Fork button
+* Confirm the fork creation
+* Wait for GitHub to generate your own copy of the repository
+
+Once complete, you should now have the portfolio saved under your own GitHub account.
+
+<img src="README-Images/fork-repository.png" width="1000">
+
+<img src="README-Images/create-fork.png" width="1000">
+
+
+✨ Step 2: Open Repository Settings
+
+Once your fork has been created, locate the `Settings` button near the top of the repository page just like shown in the image below.
+
+Click it.
+
+<img src="README-Images/settings.png" width="1000">
+
+Inside the Settings page:
+
+Scroll all the way to the bottom and locate the section called `Danger Zone` like shown in the image below and select `Leave Fork Network`
+
+<img src="README-Images/danger-zone.png" width="1000">
+
+This disconnects your repository from the original fork network and makes your portfolio completely yours.
+
+
+✨ Step 3: Create A Vercel Account
 
 First, open:
 
@@ -38,7 +72,7 @@ When creating your account:
 
 ---
 
-✨ Step 2: Connect GitHub To Vercel
+✨ Step 4: Connect GitHub To Vercel
 
 Once logged into Vercel, locate the section called:
 
@@ -68,7 +102,7 @@ section. Locate the specific portfolio repository and import it.
 ---
 
 
-✨ Step 3: Choose Your Domain Name
+✨ Step 5: Choose Your Domain Name
 
 Before deploying, you can customize your domain name to whatever you want.
 
@@ -93,7 +127,7 @@ If you received a red dot, continue below.
 ---
 
 
-✨ Step 4: Fixing Deployment Errors (TROUBLESHOOTING)
+✨ Step 6: Fixing Deployment Errors (TROUBLESHOOTING)
 
 Click the:
 
@@ -155,7 +189,7 @@ Option 2:
 ---
 
 
-✨ Step 5:  Opening Your Portfolio
+✨ Step 7:  Opening Your Portfolio
 
 Once deployment succeeds, you should now be able to open your portfolio using any of the generated Vercel domains shown on the screen.
 
@@ -165,7 +199,7 @@ Once deployment succeeds, you should now be able to open your portfolio using an
 ---
 
 
-✨ Step 6: Changing Your Domain Name Later (OPTIONAL)
+✨ Step 8: Changing Your Domain Name Later (OPTIONAL)
 
 If you want to change your domain name later:
 
@@ -183,7 +217,7 @@ If Vercel gives you a confirmation prompt like the one below, any of the two opt
 ---
 
 
-# 🎉 Perfect — Setup Complete
+# 🎉 Perfect: Setup Complete
 
 That’s it 🎉
 
