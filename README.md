@@ -109,7 +109,7 @@ Before deploying, you can customize your domain name to whatever you want.
 
 For example:
 
-      cyberkai.vercel.app  or  alexportfolio.vercel.app
+      cyberkay  or  alexportfolio
 
 Then click the: Deploy button. ⚠️ Don’t Panic If You Get Errors
 
@@ -120,7 +120,7 @@ If you immediately see a:
 * 🔴 Red dot = deployment error
 * 🟢 Green dot = successful deployment
 
-then don’t worry. If you received a green dot, you can skip Step 4 the troubleshooting step.
+then don’t worry. If you received a green dot, you can skip Step 6 the troubleshooting step.
 
 If you received a red dot, continue below.
 
@@ -156,6 +156,8 @@ Now add the first environment variable. A new panel should appear. Fill in the f
 
 Then click: Save
 
+<img src="README-Images/environment-variables.png" width="1000">
+
 Now add the second environment variable. 
 
 ### Key
@@ -168,6 +170,7 @@ Now add the second environment variable.
 
 Then click: Save
 
+<img src="README-Images/environment-variables2.png" width="1000">
 
 Once both environment variables have been added, click the: Redeploy button.
 
