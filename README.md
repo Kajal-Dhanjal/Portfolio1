@@ -447,7 +447,7 @@ You will see some instructions and find something like:
 
       <title>[Name]</title>
 
-Replace the `[Name]` with your brand name. PS: You can remove the brackets.
+Replace the `[Name]` with your brand name, don't forget to ""Commit Changes. PS: You can remove the brackets.
 
 
 ---
