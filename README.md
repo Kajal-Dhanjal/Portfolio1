@@ -595,7 +595,7 @@ Replace:
 
       [Your Location]
 
-with your: Country, City or wherever you are based.
+with your: Country, City or wherever you are based. PS: You can remove the Brackets.
 
 ---
 
