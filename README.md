@@ -649,15 +649,13 @@ Once converted, copy and paste the generated HTML code into your write-up file b
 
 ✨ Step 2: Adding Screenshots To Write-Ups.
 
-If you want to include screenshots, diagrams, or images inside your project documentation:
+If you want to include screenshots, diagrams, or images inside your project write-up documentation:
 
-First upload all screenshots to this folder:
+First upload all screenshots and images to this folder:
 
       src/Assets/Writeup-Images
 
-Once uploaded, use the image path inside your HTML image tag like this:
-
-      <img src="" />
+Once uploaded, when your writing your writeup documentation and want to add an image use this line of code and only change the screenshot name `Screenshot 2026-05-25 152410.png` to the name of whatever image you want to add in your write-up:
 
       <img src="../../Assets/Project-Writeups/Screenshot 2026-05-25 152410.png" />
 
