@@ -14,11 +14,7 @@ function Home() {
           <Row>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
-
-                {/* EDIT THIS PART:
-                    Select the skin tone that works best for you and replace the emoji on line 24.
-                    Only keep ONE & replace it in the span code: 👋 👋🏻 👋🏼 👋🏽 👋🏾 👋🏿 */}
+                Hi There!{" "} 👋🏼 
 
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
