@@ -19,8 +19,8 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              Cybersecurity Master’s student at{" "}
-              <b className="purple">Swinburne University</b> (Melbourne), graduating late 2027.
+              Bachelor’s in Cyber Security from{" "}
+              <b className="purple">Swinburne University</b> (2025); currently in the Master’s, graduating late 2027.
               Building toward{" "}
               <b className="purple">SOC analyst, detection engineering, and IAM analyst</b>{" "}
               roles on the Microsoft stack.
@@ -32,13 +32,15 @@ function Home2() {
                   Microsoft Sentinel, KQL, Defender XDR, Entra ID, Active Directory, Windows Server.
                 </b>
               </i>
-              {" "}Credentials: Microsoft Applied Skills — Administer Active Directory Domain Services;
-              Deloitte Australia Cyber Job Simulation (Forage).
+              {" "}Credentials: Microsoft Applied Skills (Administer Active Directory Domain Services);
+              Deloitte Australia &amp; AIG Cyber Job Simulations (Forage);
+              CCNA (Routing &amp; Switching, IPv6, Enterprise Networking/Security/Automation).
+              Working toward SC-200.
               <br />
               <br />
               My flagship build is a{" "}
               <b className="purple">Microsoft Sentinel detection lab</b> — custom KQL analytics
-              rules mapped to MITRE ATT&amp;CK, validated with simulated attacks alongside an
+              eight rules (and counting) mapped to MITRE ATT&amp;CK, validated with simulated attacks alongside an
               Active Directory lab. I document the process honestly at{" "}
               <a
                 href="https://kajalbuilds.hashnode.dev"
